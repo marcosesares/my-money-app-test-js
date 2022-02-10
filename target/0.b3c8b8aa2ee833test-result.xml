@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="1" time="4.692">
+ <testsuite name="Health Check Test" timestamp="2022-02-10T14:46:39" hostname="localhost" time="4.692" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Health Check Test" name="Open My Money App and logit to application. - [1002]" time="2.753" />
+ </testsuite>
+</testsuites>

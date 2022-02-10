@@ -1,0 +1,41 @@
+{
+  "name": "my-money-app-test",
+  "version": "1.0.0",
+  "description": "My Money JS Selenium",
+  "author": "Marcos César",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "webdriver-manager update --standalone=false --gecko=false",
+    "clean": "rm -rf auto-generated coverage dist e2e-report *.log",
+    "clean:all": "npm run clean -- node_modules",
+    "build": "tsc -p ./",
+    "e2e": "protractor protractor.conf.js",
+    "e2e:report": "allure generate auto-generated/allure-results -o e2e-report --clean"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "await-handler": "^1.1.2",
+    "jasmine": "^4.0.2",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-reporters": "^2.5.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "log4js": "^6.4.1",
+    "protractor": "^7.0.0",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.5",
+    "@types/jasmine": "^3.10.3",
+    "@types/jasminewd2": "^2.0.10",
+    "allure-commandline": "^2.17.2",
+    "allure-env-properties-adder": "^1.1.0",
+    "jasmine-core": "^4.0.0",
+    "ts-node": "^10.5.0",
+    "typescript": "^4.5.5"
+  }
+}

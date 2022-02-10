@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="2" errors="0" failures="0" tests="3" time="6.532">
+ <testsuite name="Regression Test" timestamp="2022-02-10T15:50:18" hostname="localhost" time="6.513" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Regression Test" name="Dashboard Consolidated value check. - [1004]" time="4.331" />
+ </testsuite>
+ <testsuite name="Smoke Test" timestamp="2022-02-10T15:50:24" hostname="localhost" time="0.009" errors="0" tests="1" skipped="0" disabled="1" failures="0">
+  <testcase classname="Smoke Test" name="Open My Money App and login to application. - [1001]" time="0.001">
+   <skipped />
+  </testcase>
+ </testsuite>
+ <testsuite name="Health Check Test" timestamp="2022-02-10T15:50:24" hostname="localhost" time="0.01" errors="0" tests="1" skipped="0" disabled="1" failures="0">
+  <testcase classname="Health Check Test" name="User Open My Money App and Sign up to application. - [1003]" time="0">
+   <skipped />
+  </testcase>
+ </testsuite>
+</testsuites>

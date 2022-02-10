@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="3" tests="3" time="178.137">
+ <testsuite name="Regression Test" timestamp="2022-02-10T15:52:22" hostname="localhost" time="6.43" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="Regression Test" name="Dashboard Consolidated value check. - [1004]" time="3.532" />
+ </testsuite>
+ <testsuite name="Smoke Test" timestamp="2022-02-10T15:52:28" hostname="localhost" time="100.999" errors="0" tests="1" skipped="0" disabled="0" failures="2">
+  <testcase classname="Smoke Test" name="Open My Money App and login to application. - [1001]" time="50.274">
+   <failure type="exception" message="Failed: By(css selector, .login-logo)Element should be visible
+Wait timed out after 50012ms"><![CDATA[TimeoutError: By(css selector, .login-logo)Element should be visible
+Wait timed out after 50012ms
+    at C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\smoke-test-suite\login\login.e2e-spec.ts:12:3)
+    at addSpecsToSuite (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\smoke-test-suite\login\login.e2e-spec.ts:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1462:12)]]>
+   </failure>
+   <failure type="exception" message="Failed: By(css selector, *[name=&quot;email&quot;])Element should be visible
+Wait timed out after 50022ms"><![CDATA[TimeoutError: By(css selector, *[name="email"])Element should be visible
+Wait timed out after 50022ms
+    at C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\smoke-test-suite\login\login.e2e-spec.ts:27:3)
+    at addSpecsToSuite (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\smoke-test-suite\login\login.e2e-spec.ts:8:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1462:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+ <testsuite name="Health Check Test" timestamp="2022-02-10T15:54:09" hostname="localhost" time="70.708" errors="0" tests="1" skipped="0" disabled="0" failures="1">
+  <testcase classname="Health Check Test" name="User Open My Money App and Sign up to application. - [1003]" time="19.92">
+   <failure type="exception" message="Failed: By(css selector, .login-logo)Element should be visible
+Wait timed out after 50001ms"><![CDATA[TimeoutError: By(css selector, .login-logo)Element should be visible
+Wait timed out after 50001ms
+    at C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\selenium-webdriver\lib\promise.js:2201:17
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+From asynchronous test: 
+Error
+    at Suite.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\health-check-test-suite\sign-up\sign-up.e2e-spec.ts:14:3)
+    at addSpecsToSuite (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+    at Env.describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+    at describe (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+    at Object.<anonymous> (C:\Work\Repository\templates-exposicao\my-money-app-test-js\e2e\test-suites\health-check-test-suite\sign-up\sign-up.e2e-spec.ts:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Module.m._compile (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Work\Repository\templates-exposicao\my-money-app-test-js\node_modules\ts-node\src\index.ts:1462:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>
