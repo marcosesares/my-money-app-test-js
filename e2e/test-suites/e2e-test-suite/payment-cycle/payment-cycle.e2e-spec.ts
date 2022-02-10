@@ -31,22 +31,15 @@ describe(SuiteNames.regressionSuite, () => {
     await LoginPageHelper.verifyUserLoggedIn();
   });
 
-  it("Dashboard Consolidated value check. - [1004]", async () => {
+  it("Add a Payment Cycle. - [1004]", async () => {
     StepLogger.caseId = 1004;
-    StepLogger.stepId(1);
-    StepLogger.step("Navigate to Payment Cycles page.");
-    PaymentCycleHelper.navigateToPaymentCyclesPage();
-    StepLogger.verification("Verify Payment Cycles page is displayed.");
-    PaymentCycleHelper.verifyPaymentCycleSectionLabel();
-  });
-
-  fit("Add a Payment Cycle. - [1005]", async () => {
-    StepLogger.caseId = 1005;
     const paymentCycle = PaymentCycleHelper.getPaymentCycle();
 
     StepLogger.stepId(1);
     StepLogger.step("Navigate to Payment Cycles page.");
     await PaymentCycleHelper.navigateToPaymentCyclesPage();
+    StepLogger.verification("Verify Payment Cycles page is displayed.");
+    PaymentCycleHelper.verifyPaymentCycleSectionLabel();
 
     StepLogger.stepId(2);
     StepLogger.step("Click the Add a Payment Cycle button.");

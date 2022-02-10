@@ -90,19 +90,19 @@ export class PaymentCycleHelper extends BasePageHelper {
   public static getPaymentCycle(): PaymentCycle {
     const date: Date = faker.date.between(INITIAL_DATE, END_DATE);
     const credits: Credits[] = [
-      { name: faker.name.findName(), value: String(date.getMonth()) },
+      { name: faker.name.findName(), value: String(date.getMonth() + 1) },
     ];
     let debits: Debits[] = [
       {
         name: faker.name.findName(),
-        value: String(date.getMonth()),
+        value: String(date.getMonth() + 1),
         status: Status.AGENDADO,
       },
     ];
 
     let paymentCycle: PaymentCycle = {
       name: faker.name.findName(),
-      month: date.getMonth(),
+      month: date.getMonth() + 1,
       year: date.getFullYear(),
       credits,
       debits,

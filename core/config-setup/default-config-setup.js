@@ -62,7 +62,7 @@ const loggingPrefs = {
   browser: "ALL",
 };
 const configSetup = {
-  restartBrowserBetweenTests: false,
+  restartBrowserBetweenTests: true,
   SELENIUM_PROMISE_MANAGER: false,
   multiCapabilities: [
     {
